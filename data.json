@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img": "/images/pexels-thirdman-7659573 1.png",
+    "title": "Blood pressure measurement",
+    "subtitle": "Blood pressure is measured in millimeters of mercury (mm Hg). A blood pressure measurement has two numbers: The top number (systolic) is the pressure of the blood flow when your heart muscle contracts, pumping blood. The bottom number (diastolic) is the pressure measured between heartbeats.",
+    "action": "Find out more...."
+  },
+  {
+    "id": 2,
+    "img": "/images/Neorosurgery.svg",
+    "title": "Neurology Devices",
+    "subtitle": "Neurosurgery is surgery of the nervous system.It is the medical specialty concerned with the diagnosis and treatment of of patients with injury to, or diseases/disorders of the brain, spinal cord and spinal column, and peripheral nerves within all parts of the body.",
+    "action": "Find out more...."
+  },
+  {
+    "id": 3,
+    "img": "/images/Hepatology 1.svg",
+    "title": "Hepatology Devices",
+    "subtitle": "Hepatology is a branch of medicine concerned with the study of the liver, gallbladder, and bile ducts and the treatment of diseases that affect them.          A hepatologist is a specialized doctor involved in the diagnosis and treatment of hepatic diseases, which include issues that affect your: liver.",
+    "action": "Find out more...."
+  }
+]

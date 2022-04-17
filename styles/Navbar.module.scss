@@ -1,0 +1,24 @@
+@import './mixin';
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 10;
+  justify-content: space-around;
+  align-items: center;
+  .nav {
+    display: none;
+  }
+  @include responsive(laptop) {
+    .nav {
+      display: flex;
+      width: 30%;
+      justify-content: space-around;
+    }
+    .toggle {
+      display: none;
+    }
+  }
+}

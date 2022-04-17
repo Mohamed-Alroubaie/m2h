@@ -1,0 +1,45 @@
+@import './breakpoints';
+@import './mixin';
+
+.footer {
+  background: linear-gradient(135deg, #4f4444, #171717);
+  width: 100vw;
+  min-height: 60vh;
+  ul {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5rem 0;
+    margin: auto;
+    @include responsive(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+    li {
+      width: max-content;
+      display: grid;
+      gap: 15px;
+    }
+  }
+  h1,
+  p,
+  a {
+    color: #dedede;
+  }
+  .icons {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  @include responsive(laptop) {
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      .icons {
+        flex-direction: column;
+      }
+    }
+  }
+}

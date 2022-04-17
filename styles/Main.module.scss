@@ -1,0 +1,98 @@
+@import './mixin';
+.main {
+  position: relative;
+  // z-index: 10;
+  width: 80%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(30%);
+  h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  .logo,
+  .icons {
+    display: none;
+  }
+  @include responsive(tablet) {
+    transform: translateY(10%);
+    // top: 50%;
+    .container {
+      width: 40%;
+      .logo {
+        display: block;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 100px;
+      }
+      p {
+        display: -webkit-box;
+        max-width: 90%;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+    .icons {
+      height: 40%;
+      position: relative;
+      transform: translateY(50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.categories {
+  display: none;
+  @include responsive(laptop) {
+    width: 100vw;
+    height: 45vh;
+    // border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .title {
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .lists {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        &::before {
+          content: '';
+          position: absolute;
+          top: -30px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          border-radius: 3px;
+          box-shadow: 0 4px 4px #777;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          border-radius: 3px;
+          box-shadow: 0 4px 4px #777;
+        }
+      }
+    }
+  }
+}
