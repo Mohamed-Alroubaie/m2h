@@ -1,6 +1,7 @@
-import { GetStaticProps, NextPage } from 'next';
+import { NextPage } from 'next';
 import Card from '../../components/Card';
 import Layout from '../../components/Layout';
+import data from '../../data.json';
 
 interface Data {
   id?: number;
@@ -10,7 +11,7 @@ interface Data {
   action: string;
 }
 
-const Index: NextPage = ({ data }: any) => {
+const Index: NextPage = () => {
   return (
     <Layout>
       <>
@@ -26,16 +27,6 @@ const Index: NextPage = ({ data }: any) => {
       </>
     </Layout>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/data');
-  const data: Data = await res.json();
-  return {
-    props: {
-      data,
-    },
-  };
 };
 
 export default Index;

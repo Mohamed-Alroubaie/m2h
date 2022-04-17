@@ -1,7 +1,8 @@
-import type { GetStaticProps, NextPage } from 'next';
+import type { NextPage } from 'next';
 import Image from 'next/image';
 
 import Layout from '../components/Layout';
+import data from '../data.json';
 import Main from '../components/Main';
 import Card from '../components/Card';
 interface Data {
@@ -12,7 +13,7 @@ interface Data {
   action: string;
 }
 
-const Home: NextPage<Data> = ({ data }: any) => {
+const Home: NextPage<Data> = () => {
   return (
     <Layout>
       <Image src={'/images/Group 75.png'} layout='fill' alt='' />
@@ -28,16 +29,6 @@ const Home: NextPage<Data> = ({ data }: any) => {
       ))}
     </Layout>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/data');
-  const data: Data = await res.json();
-  return {
-    props: {
-      data,
-    },
-  };
 };
 
 export default Home;
