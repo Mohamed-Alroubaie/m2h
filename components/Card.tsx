@@ -15,7 +15,6 @@ const Card: NextPage<Data> = ({ img, title, subtitle, action }) => {
   return (
     <div className={s.cards}>
       <div className={s.card}>
-        {/* <div className={s.img}> */}
         <Image
           src={img}
           width={400}
@@ -24,7 +23,6 @@ const Card: NextPage<Data> = ({ img, title, subtitle, action }) => {
           alt='Card Image'
           // className={s.img}
         />
-        {/* </div> */}
         <div className={s.content}>
           <h1 className={s.title}>{title}</h1>
           <p className={s.subtitle}>{subtitle}</p>

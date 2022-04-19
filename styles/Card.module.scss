@@ -45,6 +45,12 @@
   .cards {
     width: 80vw;
     height: 280px;
+    &:nth-child(even) {
+      .content {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
     .card {
       grid-template-rows: 1fr;
       grid-template-columns: repeat(2, 1fr);
