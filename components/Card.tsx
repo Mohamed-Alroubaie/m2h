@@ -21,7 +21,6 @@ const Card: NextPage<Data> = ({ img, title, subtitle, action }) => {
           height={200}
           layout='responsive'
           alt='Card Image'
-          // className={s.img}
         />
         <div className={s.content}>
           <h1 className={s.title}>{title}</h1>

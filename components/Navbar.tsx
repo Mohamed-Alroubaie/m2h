@@ -44,7 +44,7 @@ const Navbar: NextPage = () => {
             <a className={style.link}>Contact</a>
           </Link>
         </li>
-        {/* <li className={style.icon}>
+        <li className={style.icon}>
           <Link href='/'>
             <a className={style.link}>
               <Image height={16} width={16} src='/images/Vector.png' alt='' />
@@ -62,7 +62,7 @@ const Navbar: NextPage = () => {
               />
             </a>
           </Link>
-        </li> */}
+        </li>
       </ul>
       <div className={style.toggle}>
         <Toggler />
